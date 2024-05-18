@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fish Value Calculator</title>
+  <style>
+    .quantity {
+      width: 3em;
+    }
+  </style>
+</head>
+<body>
+  <div id="fish-container">
+  <form id="entry">
+    <select id="fish">
+      <option value="chub">Chub</option>
+    </select>
+    <select name="" id="qual">
+      <option value="basic">Basic</option>
+      <option value="silver">Silver</option>
+      <option value="gold">Gold</option>
+      <option value="iridium">Iridium</option>
+    </select>
+    <input type="number" id="quantity" class="quantity" value="1">
+    <label for="Fisher">Fisher</label><input type="checkbox" id="Fisher">
+    <label for="Angler">Angler</label><input type="checkbox" id="Angler">
+    <span id="result"></span>
+  </form>
+  </div>
+  <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
