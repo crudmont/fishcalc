@@ -1,4 +1,5 @@
 const fish = {
+  tilapia: {basic: 75, silver: 93, gold: 112, iridium: 150},
   chub: {basic: 50, silver: 62, gold: 75, iridium: 100}
 }
 const felt = document.getElementById("fish-container");
@@ -14,7 +15,7 @@ function checkProfessions(a, f) {
 
 function computeFishValue(t, qual, n, pro) {
   let current = fish[t];
-  return n * current[qual] * pro;
+  return Math.floor(n * current[qual] * pro);
 }
 
 function displayResults() {
@@ -28,7 +29,7 @@ function displayResults() {
 
   let elt = document.getElementById("result");
   let result = computeFishValue(t, q, n, pro);
-  elt.innerText = `= ${result}`;
+  elt.innerText = `= ${result}g`;
 }
 
 displayResults();

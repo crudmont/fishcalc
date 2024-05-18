@@ -5,6 +5,7 @@
 - make the single line calc a component
 - add/remove fish to be calculated, iterate over components
   - array of components, indices as part of id names
+- iterate over fish values to build type select box
 - handle NaN results in a sensible way (render zero)
 - preventDefault() on textbox submission (hitting Enter)
 
